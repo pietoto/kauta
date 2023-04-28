@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+    <title> Тренажёры </title>
+    <h1> Миссия колоннизация Марса </h1>
+    <div class="alert alert-light" role="alert">
+        <h4>И на Марсе будут яблони цвести</h4></div>
+
+</head>
+<body>
+<h2>Оформление вашей каюты</h2>
+<table width="40%" height="200" border="2" cellpadding="4" cellspacing="0">
+
+
+    {% if 'female' in gender and old < 21 %}
+    <tr>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Цвет стен</div>
+            </h4>
+        </th>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Эмблема</div>
+            </h4>
+        </th>
+    </tr>
+    <tr>
+        <td><img src="/static/img/pink_1.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+        </td>
+        <td><img src="/static/img/baby_al.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+    </tr>
+
+    {% elif 'female' in gender and old >= 21 %}
+    <tr>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Цвет стен</div>
+            </h4>
+        </th>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Эмблема</div>
+            </h4>
+        </th>
+    </tr>
+    <tr>
+        <td><img src="/static/img/pink_2.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+        </td>
+        <td><img src="/static/img/adult_al.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+    </tr>
+
+    {% elif 'male' in gender and old < 21 %}
+    <tr>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Цвет стен</div>
+            </h4>
+        </th>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Эмблема</div>
+            </h4>
+        </th>
+    </tr>
+    <tr>
+        <td><img src="/static/img/blue_1.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+        </td>
+        <td><img src="/static/img/baby_al.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+    </tr>
+
+    {% elif 'male' in gender and old >= 21 %}
+    <tr>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Цвет стен</div>
+            </h4>
+        </th>
+        <th>
+            <h4>
+                <div class="alert alert-dark" role="alert">Эмблема</div>
+            </h4>
+        </th>
+    </tr>
+    <tr>
+        <td><img src="/static/img/blue_2.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+        </td>
+        <td><img src="/static/img/adult_al.jpg" width="200" height="100"
+                 alt="здесь должна была быть картинка, но не нашлась"></td>
+    </tr>
+
+    {% endif %}
+</table>
+</body>
+</html>
